@@ -222,14 +222,14 @@ import App from "./components/App";
 ReactDOM.render(<App />, document.getElementById('root') as HTMLElement);
 ```
 
-### 6) add npm scripts
+### 7) add npm scripts
 ``` json
 "start": "electron .",
 "build": "webpack",
 "watch": "webpack --watch"
 ```
 
-### 7) change npm electorn entry point
+### 8) change npm electorn entry point
 ``` json
   "main": "index.js",
 ```
@@ -238,7 +238,7 @@ ReactDOM.render(<App />, document.getElementById('root') as HTMLElement);
   "main": "dist/main/main.js",
 ```
 
-### 8) configure deploy envrionment (target: win10)
+### 9) configure deploy envrionment (target: win10)
 ``` bash
 npm install asar --save-dev
 npm install electron-packager --save-dev
