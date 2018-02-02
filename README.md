@@ -243,6 +243,6 @@ ReactDOM.render(<App />, document.getElementById('root') as HTMLElement);
 npm install asar --save-dev
 npm install electron-packager --save-dev
 ```
-npm script 추가
+add npm script
 ``` json
 "package": "npm run build && electron-packager . \"Electron Delpoy App\" --overwrite --asar --platform win32 --arch x64 --out release"
