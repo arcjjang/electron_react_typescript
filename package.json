@@ -1,0 +1,33 @@
+{
+  "name": "electron-react-typescript",
+  "version": "1.0.0",
+  "description": "electron + react + typescript",
+  "main": "dist/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "package": "npm run build && electron-packager . \"Electron Delpoy App\" --overwrite --asar --platform win32 --arch x64 --out release"
+  },
+  "author": "kjc",
+  "license": "MIT",
+  "devDependencies": {
+    "asar": "^0.14.1",
+    "awesome-typescript-loader": "^3.4.1",
+    "css-loader": "^0.28.9",
+    "electron": "^1.7.12",
+    "electron-packager": "^10.1.2",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.20.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.1",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/react": "^16.0.36",
+    "@types/react-dom": "^16.0.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
